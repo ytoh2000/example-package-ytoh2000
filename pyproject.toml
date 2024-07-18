@@ -5,16 +5,16 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
+readme = "README.md"
 name = "example-package-ytoh2000"
-version = "0.1.1"
+dynamic = ["version"]
 dependencies = [
   "numpy"
 ]
 authors = [
   { name="Yongtaek Oh", email="ytoh2000@gmail.com" },
 ]
-description = "A small example package"
-readme = "README.md"
+description = "A small example package for INTERSECT 2024"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -29,3 +29,6 @@ test = ["pytest"]
 [project.urls]
 "Homepage" = "https://ytoh2000.github.io/example-package-ytoh2000"
 "Source Code" = "https://github.com/ytoh2000/example-package-ytoh2000"
+
+[tool.hatch]
+version.path = "src/example_package_ytoh2000/__init__.py"
