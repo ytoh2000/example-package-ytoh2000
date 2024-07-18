@@ -6,10 +6,26 @@ build-backend = "hatchling.build"
 
 [project]
 name = "example-package-ytoh2000"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
   "numpy"
+]
+authors = [
+  { name="Yongtaek Oh", email="ytoh2000@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload",
 ]
 
 [project.optional-dependencies]
 test = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://ytoh2000.github.io/example-package-ytoh2000"
+"Source Code" = "https://github.com/ytoh2000/example-package-ytoh2000"
